@@ -1,0 +1,126 @@
+html{
+    width: 70%;
+    margin-left: 15%;
+}
+img{
+    width: 350px;
+}
+header img{
+    width: 100%;
+    height: 40em;
+}
+
+main{
+
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+body{
+    border: 2px solid black;
+}
+nav ul{
+    list-style-type: none;
+}
+nav{
+    height: 10em;
+    background-color: white;
+    width: 100%;
+}
+
+
+nav ul li{
+    display: inline-block;
+}
+#nav1, #nav2, #nav3, #nav4{
+    color: white;
+    font-size: 1.8em;
+}
+#item4{
+    font-size: 180%;
+}
+
+#shop, #events{
+    border-bottom: 2px solid black;
+}
+#shop{
+    font-size: 1em;
+}
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+#events{
+    background-color:#0c3b08
+}
+#events h2, #events h3, #events p{
+    color: white;
+}
+
+#about{
+    background-color: rgb(15, 15, 15);
+    border: 2px solid black;
+}
+#about h2, #about h3{
+    color: white;
+}
+#shop h2, #events h2, #about h2{
+    font-size: 400%;
+ 
+}
+#events h2{
+    color: rgb(149, 201, 71);
+}
+#about h2{
+    color: white;
+}
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 750px){  
+    li{
+        font-size: 0.5em;
+    }
+
+
+}
+
+@media only screen and (max-width: 420px){  
+    html{
+        width: 100%;
+        margin: 0;
+    }
+    header img{
+        display: none;
+    }
+    li{
+        font-size: 0.6em; 
+    }
+    a{
+        margin: 0;
+    }
+}
+@keyframes colorChange{
+    0%  {color: black;}
+    14% {color: red; }
+    28% {color: orange;}
+    42% {color: yellow;}
+    56% {color: green;}
+    70% {color: blue;}
+    84% {color: indigo;}
+    100%{color: violet;}
+}
+#shop h4{
+    animation-name: colorChange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
